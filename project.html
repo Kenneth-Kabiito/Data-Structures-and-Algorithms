@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="view port" content="width= device-width, initial-scale=1.0">
+<title>project</title>
+<style type="text/css">
+.tog {background-color:#4863A0; width:100%; height:30%; color:white;}
+.hey {overflow:auto;}
+.column1, .column2 {margin:1px; float:left;}
+.column1 {width:20%; background-color:#95B9C7;}
+.column2 {width:80%; float:right; background-color:#EBF4FA;}
+a {color:white; }
+#pop {font-family:algerian; font-size:30px; text-align:center;}
+.pup {text-align:right;}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div class="tog">
+<p id="pop">The Data Structure And Algorithms</p>
+<p class="pup"><a href="">Basics</a> | <a href="">Linked lists</a> | <a href="">Priority queues</a> | <a href="">Heaps</a> | <a href="">Trees</a> | <a href="">Sorting and Seaching</a> | <a href="">Basic Graphs</a></p>
+</div>
+<div class="hey">
+<div class="article column1">
+</div>
+<div class="article column2">
+<h1>Data Structures and Algorithms</h1>
+<ul>
+<li>The design of an efficient algorithm for the solution of the problem calls for the inclusion of appropriate data structures.</li> 
+<li>A clear, unambiguous set of instructions following the properties of the algorithm alone does not contribute to the efficiency of the solution.</li> 
+<li>It is essential that the data on which the program need to work on are appropriately structured to suit the needs of the problem, thereby contributing to the efficiency of the solution</li>
+<li>For example, let us consider the problem of searching for a telephone number of a person, in the telephone directory.</li> 
+<li>This will be easy if the data is sorted according to alphabetical order of the subscriber's names</li> 
+<li>However when the data is unstructured, the search algorithm turns out to be crude and hence inefficient.</li> 
+<li>This is a classic example to illustrate the significant role played by data structures in the efficiency of the algorithms.</li>
+<li> All in all data structures is simply the study of various ways of organizing data in a computer so that the information can be manipulated by systematic and step by step procedure called algorithms.</li>
+ <li>The data structure can be defined as the collection of elements and all the possible operations which are required for those set of elements. In other words data structure will tell us which are the elements required as well as the legal operations on those set of elements.</li>
+ <li><h2>For Example</h2> 
+Consider a set of elements which are required to store in an array. Various operations such as reading of the elements and storing them at appropriate index can be performed. If we want to access any particular element then that element can be retrieved from the array. Thus reading, printing, searching would be the operations required to perform these tasks for the elements. Thus integer elements and set of operations form the data structure-array</li>
+ <li>Data structures and algorithms cannot work in isolation. They have to work hand in hand to give an ideal program which is able to solve a problem.</li> 
+ <li>Algorithm + Data structure = Program</li>
+ <h2>Abstract data types</h2>
+<ul> 
+ <li>A data type- refers to the type of values that variables in a programming language hold. Thus data types of integer, real, character, Boolean which are inherently provided in programming languages are referred as primitive data types.</li> 
+<li>A list of elements is called a data object. For example a list of integers or a list of alphabetical strings as data objects</li> 
+ <li>The data objects which comprise the data structure and their fundamental operations are known as Abstract DataType (ADT)</li> 
+ <li>In other words, an ADT is defined as a set of data objects D defined over a domain Land supporting a list of operations O.</li>
+</ul>
+<h2>Definition and Classification</h2>
+ ADT has the following characteristics:
+<ul>
+ <li>Provides a description of elements in terms of data types</li> 
+<li> Defines relationship among individual elements</li> 
+ <li>Valid operations and parameters to be passed</li> 
+ <li>Error conditions associated with the operations</li> 
+</ul>
+ For example an ADT stack can be defined by packaging together the following operations
+ <ul>
+<li>Push - insert an item into the stack</li> 
+<li> Pop - Returns a data item from stack</li> 
+ <li>peek()- Returns top most element without removing it from the stack</li> 
+<li> size() - Returns the number of elements currently in the stack</li> 
+<li> isEmpty() - Returns true if stack is empty, and false otherwise.</p> 
+ <p>Set of operations associated with ADT is called interface.</li> 
+<li> Elements of ADT data structure are manipulated through an interface</li>
+</ul>
+<h2>Classification of data structures</h2>
+ <p>The data structures are broadly classified as linear data structures and non-linear data structures.</p>
+<p><h3>Linear Data structures</h3> - are data structures in which data is arranged in a list or in a straight line. They are further classified as sequential and linked representations.</p>
+<p> <h3>Non-linear</h3> data structures are the data structures in which data may be arranged in hierarchical manner.</p>
+ <p>Linked list consist of data items called nodes. Each data element contains two field; information field and a link field connected to another data items.</p>
+ <p>In a stack, last item added can be taken off first. Works on the principle of LIFO</p>
+<p><h2>Classification of data structures (Linear)</h2></p>
+<p> <h3>A queue</h3> is a data structure in which an item can be added at one end and removed from the other end. It works on the principle of FIFO</p>
+ <p>An array is a collection of homogeneous items.</p>
+<p><h2>Classification of data structures (Non-Linear)</h2></p>
+ <p>A tree is a data structure that consists of a set of data items called nodes.</p> 
+ <p>It contains an information field and a link filed, which is address of related element</p> 
+ <p>There are variations of trees i.e binary, AVL, Red and Black, Splay, B-trees or heap</p>
+ <p>Graph is a set of data items, called vertices or nodes, connected by links termed as edges or arcs.</p>
+<h2>Stack</h2>
+ <p>The data object stack is an ordered list but the access, insertions and deletions of elements are restricted by following rules.</p> 
+ <p>For example, in a stack, the operations are carried out in such a way that the last element which is inserted will be the first element out.</p> 
+<p> Such order is called Last In First Out or 'LIFO'</p> 
+ <p>The ordered list does not have specific ordering and the elements are inserted and deleted in any random order.</p> 
+ <p>Thus stacks may be treated as special cases of ordered lists.</p>
+<h2>What is a stack?</h2>
+<p>A stack is an ordered list in which all insertions and deletions are made at one end called the top.</p> 
+<p>If we have to make a stack of elements 20, 30, 40, 50, 60 then 20 will be the bottommost element and 60 will be the topmost element in the stack.</p>
+<p>Other examples of stacks can be as in the figure below</p>
+<p>Primitive Operations on the Stack</p>
+ <p>We will now discuss the operations which can be carried out on the stack. The operations are as follows:</p> 
+<p> To create a stack</p> 
+<p> To insert an element on the stack</p> 
+ <p>To delete an element from the stack</p> 
+ <p>To check which element is at the top of the stack.</p> 
+ <p>To check whether a stack is empty or not.</p>
+<h2>The Stack ADT</h2>
+ <p><h3>The stack operations are given below.</h3> </p>
+ <p>Stack() - creates a new stack that is empty. It needs no parameters and returns an empty stack.</p> 
+ <p>push(item) -adds a new item to the top of the stack. It needs the item and returns nothing.</p> 
+<p> pop() - removes the top item from the stack. It needs no parameters and returns the item. The stack is modified. </p>
+ <p>peek() - returns the top item from the stack but does not remove it. It needs no parameters. The stack is not modified.</p>
+ <p>is_empty() - tests to see whether the stack is empty. It needs no parameters and returns a Boolean value.</p> 
+<p> size() - returns the number of items on the stack. It needs no parameters and returns an integer.</p>
+<p>Push and Pop</p>
+ <p>Primary operations: Push and Pop</p> 
+ <p><h2>Push</h2></p> 
+<p> Add an element to the top of the stack</p> 
+<p><h2> Pop</h2> </p>
+<p> Remove the element at the top of the stack</p>
+<p>Push and Pop</p>
+<h2>Stack  Applications</h2>
+<p>Real life</p> 
+ <p>Pile of books</p> 
+<p> Plate trays</p> 
+<p>More applications related to computer science</p> 
+ <p>Program execution stack (read more from your text)</p> 
+ <p>Evaluating expressions</p> 
+<p>Functional calls/recursion</p> 
+<p>Undo in an editor </p>
+<p>Balanced parenthesis</p>
+<p>Implementing a Stack</p>
+<p>At least two different ways to implement a stack</p> 
+ <p>array </p>
+ <p>linked list</p> 
+ <p>Also vectors can also be used to implement stack.</p> 
+<p>Which method to use depends on the application</p> 
+ <p>what advantages and disadvantages does each implementation have?</p>
+<p>Implementing Stacks: Array</p>
+ <p>Advantages</p> 
+<p> best performance</p> 
+<p> Disadvantage</p> 
+ <p>fixed size</p> 
+ <p>Basic implementation</p> 
+<p> initially empty array</p> 
+ <p>field to record where the next data gets placed into</p> 
+<p> if array is full, push() returns false</p> 
+ <p>otherwise adds it into the correct spot</p> 
+ <p>if array is empty, pop() returns null</p> 
+ <p>otherwise removes the next item in the stack</p>
+<p>Array implementation of stacks</p>
+</div>
+</div>
+</body>
+</html>
